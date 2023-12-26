@@ -8,7 +8,7 @@ export default function ShoppingOptions({ logo, title, description, price }) {
         {price},-<p className="inline-block text-sm font-light">/month</p>
       </div>
       <button className="rounded-full bg-[#F0F0F6] px-6 py-4 shadow-md hover:bg-[#171435] hover:text-blue-50">
-        Add subscription
+        Add subscriptionn
       </button>
     </div>
   );
