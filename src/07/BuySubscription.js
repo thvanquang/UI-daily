@@ -103,7 +103,6 @@ export default function BuySubscription() {
         <button className="rounded-full bg-[#171435] px-6 py-4 text-base font-medium text-white">
           See all subscriptions
         </button>
-        <div>test git</div>
       </div>
     </div>
   );
