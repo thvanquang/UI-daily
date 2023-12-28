@@ -5,12 +5,13 @@
 // import UserList from "./05/UserList";
 // import Notification from './06/Notification';
 // import BuySubscription from "./07/BuySubscription";
-import JobCards from "./08/JobCards";
+// import JobCards from "./08/JobCards";
+import CompanyList from "./09/CompanyList";
 
 function App() {
   return (
     <div>
-      <JobCards />
+      <CompanyList />
     </div>
   );
 }
