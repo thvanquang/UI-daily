@@ -22,7 +22,7 @@ const COMPANIES = [
 export default function CompanyList() {
   return (
     <div className="flex h-screen w-full items-center justify-center bg-gray-300 p-8">
-      <div className="w-[70rem] rounded-[36px] bg-white p-16 font-poppins">
+      <div className="w-[64rem] rounded-[36px] bg-white p-[7rem] font-poppins text-[#1E316A]">
         <div className="mb-6 flex items-center justify-between">
           <div className="relative">
             <input
@@ -46,7 +46,7 @@ export default function CompanyList() {
             </svg>
           </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-6">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -76,7 +76,7 @@ export default function CompanyList() {
           <div className="flex flex-col gap-4">
             {COMPANIES.map((company) => {
               return (
-                <div className="flex justify-between rounded-3xl p-4 hover:bg-[#FAF2FE]">
+                <div className="group flex items-center justify-between rounded-3xl p-4 hover:bg-[#FAF2FE]">
                   <div className="flex items-center gap-2">
                     <div className="rounded-full bg-white p-4">
                       <img
@@ -96,8 +96,16 @@ export default function CompanyList() {
 
                   <p className="self-center">{company.accounts} accounts</p>
 
-                  <button className="rounded-full bg-white px-6 py-2">
-                    ...
+                  <button className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#747494] group-hover:text-[#1E316A]">
+                    <svg
+                      className="h-5 w-5"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      viewBox="0 0 16 3"
+                    >
+                      <path d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                    </svg>
                   </button>
                 </div>
               );
