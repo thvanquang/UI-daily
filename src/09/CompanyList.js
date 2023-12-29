@@ -90,7 +90,9 @@ export default function CompanyList() {
                       <h2 className="font-merriweather text-xl font-bold">
                         {company.name}
                       </h2>
-                      <a href={"https://www." + company.link}>{company.link}</a>
+                      <a href={sanitizeUrl("https://www." + company.link)}>
+                        {company.link}
+                      </a>
                     </div>
                   </div>
 
