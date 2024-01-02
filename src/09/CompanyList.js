@@ -1,3 +1,5 @@
+import { sanitizeUrl } from "../utility/SanitizeUrl";
+
 const COMPANIES = [
   {
     name: "Dropbox",
@@ -76,7 +78,10 @@ export default function CompanyList() {
           <div className="flex flex-col gap-4">
             {COMPANIES.map((company) => {
               return (
-                <div className="group flex items-center justify-between rounded-3xl p-4 hover:bg-[#FAF2FE]">
+                <div
+                  key={company.name}
+                  className="group flex items-center justify-between rounded-3xl p-4 hover:bg-[#FAF2FE]"
+                >
                   <div className="flex items-center gap-2">
                     <div className="rounded-full bg-white p-4">
                       <img
@@ -90,7 +95,7 @@ export default function CompanyList() {
                       <h2 className="font-merriweather text-xl font-bold">
                         {company.name}
                       </h2>
-                      <a href={sanitizeUrl("https://www." + company.link)}>
+                      <a href={sanitizeUrl(`https://www.${company.link}`)}>
                         {company.link}
                       </a>
                     </div>
