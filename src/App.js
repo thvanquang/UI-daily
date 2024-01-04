@@ -7,12 +7,14 @@
 // import BuySubscription from "./07/BuySubscription";
 // import JobCards from "./08/JobCards";
 // import CompanyList from "./09/CompanyList";
-import Login from "./10/Login";
+// import Login from "./10/Login";
+
+import BlogComponents from "./11/BlogComponents";
 
 function App() {
   return (
     <div>
-      <Login />
+      <BlogComponents />
     </div>
   );
 }
