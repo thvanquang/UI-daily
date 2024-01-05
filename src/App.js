@@ -8,13 +8,14 @@
 // import JobCards from "./08/JobCards";
 // import CompanyList from "./09/CompanyList";
 // import Login from "./10/Login";
+// import BlogComponents from "./11/BlogComponents";
 
-import BlogComponents from "./11/BlogComponents";
+import Footer from "./12/Footer";
 
 function App() {
   return (
     <div>
-      <BlogComponents />
+      <Footer />
     </div>
   );
 }
