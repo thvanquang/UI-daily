@@ -9,13 +9,13 @@
 // import CompanyList from "./09/CompanyList";
 // import Login from "./10/Login";
 // import BlogComponents from "./11/BlogComponents";
-
-import Footer from "./12/Footer";
+// import Footer from "./12/Footer";
+import Dropdown from "./13/Dropdown";
 
 function App() {
   return (
     <div>
-      <Footer />
+      <Dropdown />
     </div>
   );
 }
